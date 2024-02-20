@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 2</title>
+</head>
+
+<body>
+
+
+    <form style="width: 50%; margin:0 auto;">
+        <fieldset>
+            <legend>Personal Detail</legend>
+
+            <p>Salutation</p>
+
+            <select name="se" id="se">
+                <option value="none">--None--</option>
+                <option value="none">--None--</option>
+                <option value="none">--None--</option>
+                <option value="none">--None--</option>
+            </select>
+
+            <p>
+                <label for="name">First name:<input type="text" name="name" id="name"></label>
+            </p>
+            <p>
+                <label for="sur">Last name:<input type="text" name="name" id="name"></label>
+            </p>
+
+            <p>
+                Gender:
+                <label for="male">
+                    <input type="radio" name="gender" id="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female"> Female
+                </label>
+            </p>
+
+            <p>
+                <label for="email">Email:<input type="email" name="email" id="email"></label>
+            </p>
+            <p>
+                <label for="date">Date of birth:<input type="date" name="date" id="date"></label>
+            </p>
+
+            <p>
+                <label for="add">address: <br>
+                    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <br>
+    <hr> <br>
+
+    <form style="width: 50%; margin:0 auto;">
+        <h1>HTML Form</h1>
+        <p>
+            <label for="name">First name:<input type="text" name="name" id="name"></label>
+        </p>
+        <p>
+            <label for="sur">Last name:<input type="text" name="sur" id="sur"></label>
+        </p>
+        <p>
+            <label for="email">Email:<input type="email" name="email" id="email"></label>
+        </p>
+        <p>
+            <label for="number">Email:<input type="number" name="number" id="number"></label>
+        </p>
+        <p>
+            Country:
+            <select name="country" id="country">
+                <option value="default">Choose a country</option>
+                <option value="aze">Aze</option>
+                <option value="usd">Usd</option>
+                <option value="rus">Rus</option>
+            </select>
+        </p>
+        <p>
+            City:
+            <select name="country" id="country">
+                <option value="default">Choose a city</option>
+                <option value="aze">Aze</option>
+                <option value="usd">Usd</option>
+                <option value="rus">Rus</option>
+            </select>
+        </p>
+
+        <p>
+            Language(s);
+            <br>
+            <br>
+            <label for="en">En
+                <input type="checkbox" name="en" id="en">
+            </label>
+            <label for="de">De
+                <input type="checkbox" name="de" id="de">
+            </label>
+            <label for="fr">Fr
+                <input type="checkbox" name="fr" id="fr">
+            </label>
+            <label for="ru">Ru
+                <input type="checkbox" name="ru" id="ru">
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+
+    <form style="width: 50%; margin:0 auto;">
+        <h1>Login</h1>
+        <p>
+            <label for="name">name:<input type="text" name="name" id="name"></label>
+        </p>
+        <p>
+            <label for="email">Email:<input type="email" name="email" id="email"></label>
+        </p>
+        <p>
+            <label for="pass">Password:<input type="password" name="pass" id="pass"></label>
+        </p>
+        <p>
+            <label for="phone">Phone:<input type="number" name="phone" id="phone"></label>
+        </p>
+
+        <p>
+            Gender;
+            <br>
+            <br>
+            <label for="male">Male
+                <input type="radio" name="gender" id="male">
+            </label>
+            <label for="female">Female
+                <input type="radio" name="gender" id="female">
+            </label>
+          
+        </p>
+
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+</body>
+
+</html>
