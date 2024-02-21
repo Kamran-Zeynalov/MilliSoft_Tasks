@@ -1,0 +1,171 @@
+.first {
+    background-color: rgb(65, 182, 182);
+    border: 1px solid gray;
+    padding: 6px;
+    margin: 10px;
+}
+
+.sec {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sec div {
+    padding: 6px;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+.three {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.three div {
+    display: inline-block;
+    background-color: gray;
+    padding-right: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.three div p {
+    /* width: 100%; */
+
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+.fourty {
+    text-align: center;
+}
+
+.fourty div {
+    width: 16%;
+    margin-top: 20px;
+}
+
+
+.fifty {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        text-align: center;
+
+        tr {
+            th {
+                padding: 10px;
+                background-color: white;
+            }
+
+            td {
+                padding: 10px;
+            }
+
+            &:nth-child(odd) {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+}
+
+.six {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border: 3px solid red;
+
+    }
+
+    .a {
+        border-radius: 15px;
+    }
+
+    .b {
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .c {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .d {
+        border-top-left-radius: 100px;
+    }
+
+    .e {
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .f {
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .g {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .t {
+        border-radius: 50%;
+    }
+}
+
+.seven {
+    margin: 60px 0;
+    padding: 0;
+    box-shadow: -1px 1px 10px 1px gray;
+
+    h2 {
+        color: white;
+        padding: 10px;
+        background-color: rgb(9, 152, 200);
+    }
+
+    h4 {
+        color: white;
+        padding: 10px;
+        background-color: rgb(9, 152, 200);
+    }
+}
+
+.end {
+    .image-name {
+        display: inline-block;
+        text-align: center;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .image {
+            width: 300px;
+            margin: 0 auto;
+            background-color: green;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
