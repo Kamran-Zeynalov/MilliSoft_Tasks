@@ -5,6 +5,64 @@ body {
   font-family: sans-serif;
 }
 
+.menu {
+  position: fixed;
+  right: 15px;
+  top: 13px;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(52, 58, 64, 0.5);
+  display: inline-block;
+  transition: 0.2s;
+  z-index: 100;
+}
+.menu:hover {
+  background-color: #343a40;
+}
+.menu .xb {
+  display: none;
+}
+
+.right-menu {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #1D809F;
+  padding: 7px 80px 0 0;
+}
+.right-menu h3 {
+  padding-left: 17px;
+  font-size: 15px;
+  color: white;
+}
+.right-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0;
+}
+.right-menu ul li {
+  width: 150%;
+  margin: 0;
+  padding: 15px 0 15px 17px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.right-menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: none;
+}
+.right-menu ul li:hover {
+  background-color: #4d92a7;
+}
+
 .header {
   height: 100vh;
   background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
@@ -13,16 +71,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-.header .menu {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  padding: 10px;
-  color: white;
-  border-radius: 30px;
-  background-color: rgba(211, 211, 211, 0.778);
-  display: inline-block;
 }
 .header .title {
   display: flex;
@@ -78,7 +126,7 @@ body {
 }
 
 .offer {
-  margin-bottom: 100px;
+  transition: 0.4s;
   height: 390px;
   background-color: #1d809f;
 }
@@ -105,6 +153,13 @@ body {
   border-radius: 50%;
   margin: 0 auto;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer .flex .pro .image i {
+  font-size: 32px;
+  color: #1d809f;
 }
 .offer .flex .pro .name p {
   color: white;
@@ -113,4 +168,160 @@ body {
   color: lightgray;
   font-weight: lighter;
   font-size: 15px;
+}
+
+.download {
+  height: 100vh;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.download .title {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.download .title p {
+  font-size: 43px;
+  width: 60%;
+  margin: 0 auto 32px;
+  font-weight: bold;
+  font-style: italic;
+}
+.download .title button {
+  border: none;
+  color: white;
+  background-color: #1d809f;
+  padding: 18px 25px;
+  border-radius: 7px;
+}
+
+.portfolio {
+  margin-top: 70px;
+}
+.portfolio .caption {
+  text-align: center;
+}
+.portfolio .caption p {
+  margin: 0;
+  font-size: 13px;
+  color: #edb907;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.portfolio .caption h1 {
+  margin: 2px;
+}
+.portfolio .hovers {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.portfolio .hovers .hover {
+  position: relative;
+  background-color: #1D809F;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 50%;
+  margin: 0 auto;
+}
+.portfolio .hovers .hover:hover {
+  transform: scale(0.9);
+}
+.portfolio .hovers .hover:hover .image img {
+  opacity: 0.1;
+}
+.portfolio .hovers .hover .image {
+  height: 100%;
+}
+.portfolio .hovers .hover .image img {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .hovers .hover .text {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  color: white;
+}
+.portfolio .hovers .hover .text h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.portfolio .hovers .hover .text p {
+  font-weight: 100;
+}
+
+.look-at-me {
+  width: 100%;
+  margin: 50px auto 0;
+  background-color: #1D809F;
+  text-align: center;
+  padding: 80px 0;
+}
+.look-at-me .text-buttons p {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.look-at-me .text-buttons .button button {
+  cursor: pointer;
+  margin: 8px 10px;
+  padding: 19px 33px;
+  border: none;
+  border-radius: 7px;
+  color: black;
+  background-color: white;
+  transition: 0.2s;
+}
+.look-at-me .text-buttons .button button:hover {
+  background-color: rgb(195, 195, 195);
+}
+.look-at-me .text-buttons .button button:nth-child(2) {
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+.look-at-me .text-buttons .button button:nth-child(2):hover {
+  background-color: rgb(68, 68, 68);
+}
+
+.loc {
+  width: 100%;
+}
+.loc iframe {
+  width: 100%;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+}
+.footer .icons {
+  display: flex;
+  justify-content: center;
+}
+.footer .icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  padding: 20px;
+  margin: 0 5px;
+  background-color: #1D809F;
+}
+.footer p {
+  margin-top: 35px;
+  font-size: 12px;
+  color: gray;
 }/*# sourceMappingURL=style.css.map */

@@ -1,10 +1,73 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
-.header{
+
+.menu {
+    position:fixed;
+    right:15px;
+    top: 13px;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(52, 58, 64, 0.5);
+    display: inline-block;
+    transition: .2s;
+    z-index: 100;
+
+    &:hover {
+        background-color: #343a40;
+    }
+
+    .xb{
+        display: none;
+    }
+}
+
+.right-menu{
+    display: none;
+    z-index:99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #1D809F;
+    padding:7px 80px 0 0;
+
+    h3{
+        padding-left: 17px;
+        font-size: 15px;
+        color: white;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding:0 0;
+        li{
+            width: 150%;
+            margin: 0 ;
+            padding:15px 0 15px 17px;
+            font-size: 13px;
+            transition: .3s;
+            a{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                text-align: none;
+            }
+            &:hover{
+                background-color: #4d92a7;
+            }
+        }
+    }
+}
+.header {
     height: 100vh;
     background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
     background-position: center;
@@ -12,34 +75,28 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    .menu{
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        padding: 10px;
-        color: white;
-        border-radius: 30px;
-        background-color: rgba(211, 211, 211, 0.778);
-        display: inline-block;
-    }
-    .title{
+
+   
+
+    .title {
         display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
 
-        h1{
+        h1 {
             font-size: 70px;
             margin: 0;
         }
-        p{
+
+        p {
             font-size: 20px;
             font-weight: bold;
             font-style: italic;
         }
 
-        button{
+        button {
             border: none;
             color: white;
             background-color: #1d809f;
@@ -49,27 +106,29 @@ body{
     }
 }
 
-.second{
+.second {
     height: 300px;
-    .title{
+
+    .title {
         display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
 
-        h1{
+        h1 {
             font-size: 25px;
             margin: 0;
         }
-        p{
+
+        p {
             font-size: 15px;
             color: gray;
             font-weight: lighter;
             font-style: italic;
         }
 
-        button{
+        button {
             margin-top: 15px;
             border: none;
             color: white;
@@ -80,46 +139,252 @@ body{
     }
 }
 
-.offer{
-    margin-bottom: 100px;
+.offer {
+    transition: .4s;
     height: 390px;
     background-color: #1d809f;
-    .title{
+
+    .title {
         text-align: center;
         padding-top: 20px;
     }
-    h5{
+
+    h5 {
         color: orange;
     }
-    h1{
+
+    h1 {
         color: white;
     }
 
-    .flex{
+    .flex {
         padding-top: 20px;
         display: flex;
         justify-content: space-evenly;
         text-align: center;
         padding-top: 20px;
-        .pro{
-            .image{
+
+        .pro {
+            .image {
                 width: 90px;
                 height: 90px;
                 border-radius: 50%;
                 margin: 0 auto;
                 background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    font-size: 32px;
+                    color: #1d809f;
+                }
             }
 
-            .name{
-                p{
+            .name {
+                p {
                     color: white;
                 }
-                .text{
+
+                .text {
                     color: lightgray;
-                    font-weight:lighter;
+                    font-weight: lighter;
                     font-size: 15px;
                 }
             }
         }
+    }
+}
+
+.download {
+    height: 100vh;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+    background-position: center;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .title {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+        p {
+            font-size: 43px;
+            width: 60%;
+
+            margin: 0 auto 32px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        button {
+            border: none;
+            color: white;
+            background-color: #1d809f;
+            padding: 18px 25px;
+            border-radius: 7px;
+        }
+    }
+}
+
+.portfolio {
+    margin-top: 70px;
+
+    .caption {
+        text-align: center;
+
+        p {
+            margin: 0;
+            font-size: 13px;
+            color: #edb907;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 2px;
+        }
+    }
+
+    .hovers {
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        flex-wrap: wrap;
+        margin: 30px auto;
+
+        .hover {
+            position: relative;
+            background-color: #1D809F;
+            overflow: hidden;
+            transition: .3s;
+            width: 50%;
+            margin: 0 auto;
+
+            &:hover {
+                transform: scale(0.9);
+
+                .image {
+                    img {
+                        opacity: 0.1;
+                    }
+                }
+            }
+
+            .image {
+                height: 100%;
+
+                img {
+                    transition: .3s;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .text {
+                position: absolute;
+                bottom: 40px;
+                left: 50px;
+                color: white;
+
+                h6 {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+.look-at-me {
+    width: 100%;
+    margin: 50px auto 0;
+    background-color: #1D809F;
+    text-align: center;
+    padding: 80px 0;
+
+    .text-buttons {
+        p {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .button {
+            button {
+                cursor: pointer;
+                margin: 8px 10px;
+                padding: 19px 33px;
+                border: none;
+                border-radius: 7px;
+                color: black;
+                background-color: white;
+                transition: .2s;
+
+                &:hover {
+                    background-color: rgb(195, 195, 195);
+                }
+
+                &:nth-child(2) {
+                    background-color: rgb(47, 47, 47);
+                    color: white;
+
+                    &:hover {
+                        background-color: rgb(68, 68, 68);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.loc {
+    width: 100%;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+
+    .icons {
+        display: flex;
+        justify-content: center;
+
+        div {}
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            color: white;
+            padding: 20px;
+            margin: 0 5px;
+            background-color: #1D809F;
+        }
+    }
+
+    p{
+        margin-top: 35px;
+        font-size: 12px;
+        color: gray;
     }
 }
