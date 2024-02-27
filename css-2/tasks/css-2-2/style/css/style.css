@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .div6 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.container .div6 .div {
+  margin-top: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.container .div6 .div:first-child {
+  background-color: lightblue;
+}
+.container .div6 .div:nth-child(2) {
+  background-color: rgb(230, 94, 94);
+}
+.container .div6 .div:nth-child(3) {
+  background-color: rgb(94, 230, 121);
+}
+.container .div6 .div:nth-child(4) {
+  background-color: rgb(94, 230, 178);
+}
+.container .div6 .div:nth-child(5) {
+  background-color: rgb(230, 169, 94);
+}
+.container .div6 .div:nth-child(6) {
+  background-color: rgb(94, 148, 230);
+}
+.container .div3 {
+  display: flex;
+  justify-content: start;
+}
+.container .div3 .div {
+  margin-top: 10px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.container .div3 .div:first-child {
+  background-color: lightblue;
+}
+.container .div3 .div:nth-child(2) {
+  background-color: rgb(230, 94, 94);
+}
+.container .div3 .div:nth-child(3) {
+  background-color: rgb(94, 230, 121);
+}
+.container .div3-2 {
+  justify-content: end;
+}
+.container .div3-3 {
+  justify-content: space-between;
+}
+.container .div3-4 {
+  justify-content: space-evenly;
+}
+.container .div4 {
+  display: flex;
+  margin-bottom: 40px;
+}
+.container .div4 .insideDiv {
+  background-color: lightgray;
+  width: 19%;
+  height: 300px;
+  margin: 0 4px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .div4 .insideDiv .div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+.container .div4 .insideDiv .div:first-child {
+  background-color: lightblue;
+  justify-content: center;
+}
+.container .div4 .insideDiv .div:nth-child(2) {
+  background-color: rgb(230, 94, 94);
+}
+.container .div4 .insideDiv .div:nth-child(3) {
+  background-color: rgb(94, 230, 121);
+}
