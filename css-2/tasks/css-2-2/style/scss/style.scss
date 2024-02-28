@@ -87,6 +87,7 @@
     .div4 {
         display: flex;
         margin-bottom: 40px;
+
         .insideDiv {
             background-color: lightgray;
             width: 19%;
@@ -95,24 +96,195 @@
             text-align: center;
             display: flex;
             flex-wrap: wrap;
-            .div{
-                
+
+            &:first-child {
+                align-content: space-between;
+
+                .wit {
+                    justify-content: center;
+
+                    &:first-child {
+                        .div {
+                            background-color: lightblue;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .div {
+                            background-color: rgb(230, 94, 94);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .div {
+                            background-color: rgb(94, 230, 121);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                align-content: space-around;
+
+                .wit {
+                    justify-content: end;
+
+                    &:first-child {
+                        .div {
+                            background-color: lightblue;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .div {
+                            background-color: rgb(230, 94, 94);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .div {
+                            background-color: rgb(94, 230, 121);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                align-content: center;
+
+                .wit {
+                    justify-content: center;
+
+                    &:first-child {
+                        .div {
+                            background-color: lightblue;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .div {
+                            background-color: rgb(230, 94, 94);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .div {
+                            background-color: rgb(94, 230, 121);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                align-content: space-evenly;
+
+                .wit {
+                    justify-content: end;
+
+                    &:first-child {
+                        .div {
+                            background-color: lightblue;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .div {
+                            background-color: rgb(230, 94, 94);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .div {
+                            background-color: rgb(94, 230, 121);
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(5) {
+                align-content: end;
+
+                .wit {
+                    justify-content: start;
+
+                    &:first-child {
+                        .div {
+                            background-color: lightblue;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .div {
+                            background-color: rgb(230, 94, 94);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .div {
+                            background-color: rgb(94, 230, 121);
+                        }
+                    }
+                }
+            }
+
+            .wit {
                 width: 100%;
                 display: flex;
-                align-items: center;
-                padding: 20px 20px;
-    
-                &:first-child {
-                    background-color: lightblue;
+
+                .div {
+                    width: 25%;
+                    display: flex;
                     justify-content: center;
+                    align-items: center;
+                    padding: 20px 20px;
                 }
-    
-                &:nth-child(2) {
-                    background-color: rgb(230, 94, 94);
+            }
+        }
+    }
+
+    .div5 {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        justify-content: center;
+
+        .colors {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &:first-child {
+                justify-content: end;
+
+                .color {
+                    width: 100%;
+                    height: 100%;
+                    background-color: red;
                 }
-    
-                &:nth-child(3) {
-                    background-color: rgb(94, 230, 121);
+            }
+
+            &:nth-child(2) {
+                .color {
+                    width: 50%;
+                    height: 50%;
+
+                    &:nth-child(1) {
+                        background-color: blue;
+                    }
+
+                    &:nth-child(2) {
+                        background-color: purple;
+                    }
+
+                    &:nth-child(3) {
+                        background-color: yellow;
+                    }
+
+                    &:nth-child(4) {
+                        background-color: green;
+                    }
                 }
             }
         }

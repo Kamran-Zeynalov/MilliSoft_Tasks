@@ -80,19 +80,126 @@
   display: flex;
   flex-wrap: wrap;
 }
-.container .div4 .insideDiv .div {
+.container .div4 .insideDiv:first-child {
+  align-content: space-between;
+}
+.container .div4 .insideDiv:first-child .wit {
+  justify-content: center;
+}
+.container .div4 .insideDiv:first-child .wit:first-child .div {
+  background-color: lightblue;
+}
+.container .div4 .insideDiv:first-child .wit:nth-child(2) .div {
+  background-color: rgb(230, 94, 94);
+}
+.container .div4 .insideDiv:first-child .wit:nth-child(3) .div {
+  background-color: rgb(94, 230, 121);
+}
+.container .div4 .insideDiv:nth-child(2) {
+  align-content: space-around;
+}
+.container .div4 .insideDiv:nth-child(2) .wit {
+  justify-content: end;
+}
+.container .div4 .insideDiv:nth-child(2) .wit:first-child .div {
+  background-color: lightblue;
+}
+.container .div4 .insideDiv:nth-child(2) .wit:nth-child(2) .div {
+  background-color: rgb(230, 94, 94);
+}
+.container .div4 .insideDiv:nth-child(2) .wit:nth-child(3) .div {
+  background-color: rgb(94, 230, 121);
+}
+.container .div4 .insideDiv:nth-child(3) {
+  align-content: center;
+}
+.container .div4 .insideDiv:nth-child(3) .wit {
+  justify-content: center;
+}
+.container .div4 .insideDiv:nth-child(3) .wit:first-child .div {
+  background-color: lightblue;
+}
+.container .div4 .insideDiv:nth-child(3) .wit:nth-child(2) .div {
+  background-color: rgb(230, 94, 94);
+}
+.container .div4 .insideDiv:nth-child(3) .wit:nth-child(3) .div {
+  background-color: rgb(94, 230, 121);
+}
+.container .div4 .insideDiv:nth-child(4) {
+  align-content: space-evenly;
+}
+.container .div4 .insideDiv:nth-child(4) .wit {
+  justify-content: end;
+}
+.container .div4 .insideDiv:nth-child(4) .wit:first-child .div {
+  background-color: lightblue;
+}
+.container .div4 .insideDiv:nth-child(4) .wit:nth-child(2) .div {
+  background-color: rgb(230, 94, 94);
+}
+.container .div4 .insideDiv:nth-child(4) .wit:nth-child(3) .div {
+  background-color: rgb(94, 230, 121);
+}
+.container .div4 .insideDiv:nth-child(5) {
+  align-content: end;
+}
+.container .div4 .insideDiv:nth-child(5) .wit {
+  justify-content: start;
+}
+.container .div4 .insideDiv:nth-child(5) .wit:first-child .div {
+  background-color: lightblue;
+}
+.container .div4 .insideDiv:nth-child(5) .wit:nth-child(2) .div {
+  background-color: rgb(230, 94, 94);
+}
+.container .div4 .insideDiv:nth-child(5) .wit:nth-child(3) .div {
+  background-color: rgb(94, 230, 121);
+}
+.container .div4 .insideDiv .wit {
   width: 100%;
   display: flex;
+}
+.container .div4 .insideDiv .wit .div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   padding: 20px 20px;
 }
-.container .div4 .insideDiv .div:first-child {
-  background-color: lightblue;
+.container .div5 {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
   justify-content: center;
 }
-.container .div4 .insideDiv .div:nth-child(2) {
-  background-color: rgb(230, 94, 94);
+.container .div5 .colors {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.container .div4 .insideDiv .div:nth-child(3) {
-  background-color: rgb(94, 230, 121);
+.container .div5 .colors:first-child {
+  justify-content: end;
+}
+.container .div5 .colors:first-child .color {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.container .div5 .colors:nth-child(2) .color {
+  width: 50%;
+  height: 50%;
+}
+.container .div5 .colors:nth-child(2) .color:nth-child(1) {
+  background-color: blue;
+}
+.container .div5 .colors:nth-child(2) .color:nth-child(2) {
+  background-color: purple;
+}
+.container .div5 .colors:nth-child(2) .color:nth-child(3) {
+  background-color: yellow;
+}
+.container .div5 .colors:nth-child(2) .color:nth-child(4) {
+  background-color: green;
 }
