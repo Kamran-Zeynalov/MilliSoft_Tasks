@@ -264,7 +264,6 @@ header .header .menu ul li a:hover {
 }
 
 #Team {
-  margin-bottom: 50px;
   padding-top: 80px;
   background-color: #f8f9fa;
 }
@@ -289,16 +288,170 @@ header .header .menu ul li a:hover {
 #Team .team .image img {
   width: 100%;
 }
-#Team .team h2 {
+#Team .team .info h2 {
   font-size: 20px;
   font-weight: bold;
 }
-#Team .team p {
+#Team .team .info p {
   color: gray;
+  margin: 5px;
+}
+#Team .team .icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+#Team .team .icons .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #212529;
+  align-items: center;
+  color: white;
+  margin: 0 5px;
+}
+#Team .team .icons .icon i {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 #Team .foot {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 5 0px;
+  margin-top: 5 0;
+}
+#Team .foot p {
+  color: gray;
+  font-size: 14px;
+}
+
+#Company .row {
+  height: 130px;
+}
+#Company .row .image img {
+  width: 60%;
+}
+
+#Contact {
+  background-color: #212529;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+}
+#Contact .title {
+  margin-top: 70px;
+  text-align: center;
+}
+#Contact .title h2 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#Contact .title p {
+  font-size: 15px;
+  color: gray;
+}
+#Contact form {
+  margin-top: 15px;
+}
+#Contact form .inputs input {
+  font-weight: bold;
+  color: lightgray;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 7px;
+  margin-top: 15px;
+  margin-left: 40px;
+  display: block;
+  width: 90%;
+}
+#Contact form .inputs input::placeholder {
+  font-size: 15px;
+  color: lightgray;
+}
+#Contact form textarea {
+  font-weight: bold;
+  color: lightgray;
+  padding: 10px 15px 0;
+  outline: none;
+  border-radius: 7px;
+  margin-top: 12px;
+  display: block;
+  width: 90%;
+}
+#Contact form textarea::placeholder {
+  font-size: 15px;
+  color: lightgray;
+}
+#Contact form .button {
+  margin-top: 30px;
+  text-align: center;
+}
+#Contact form .button button {
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.65;
+  padding: 13px 26px;
+  border: none;
+  background-color: #d3a708;
+}
+
+footer .copy {
+  display: flex;
+  height: 100%;
+  margin-top: 5px;
+  align-items: center;
+}
+footer .copy p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: gray;
+  font-weight: 100;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 0;
+}
+footer .icons .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #212529;
+  align-items: center;
+  color: white;
+  margin: 0 5px;
+  padding: 0;
+}
+footer .icons .icon i {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer .pri {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+footer .pri p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 100;
+}
+footer .pri p a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 5px;
 }
