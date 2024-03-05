@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header .container .logo-menu {
+  height: 70px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo-menu .logo h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgb(252, 132, 152);
+}
+header .container .logo-menu .menu i {
+  font-size: 20px;
+  color: gray;
+}
+
+#Education .text-image {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+}
+#Education .text-image .text {
+  height: 100%;
+  width: 50%;
+}
+#Education .text-image .text h1 {
+  color: #488df4;
+  font-size: 60px;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+#Education .text-image .text p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#Education .text-image .image {
+  width: 600px;
+  height: 850px;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/1928ac4fdeea5ee28a624ce0/firstdayofschoolbacktoschoolphotoideasphotographyhowtotakegreatpictures13.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#LPPG {
+  margin-top: 30px;
+}
+#LPPG .container .lesson {
+  display: flex;
+  width: 100%;
+}
+#LPPG .container .lesson .etap {
+  padding: 70px 0;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+#LPPG .container .lesson .etap .icon i {
+  color: white;
+  font-size: 60px;
+}
+#LPPG .container .lesson .etap .title {
+  margin-top: 20px;
+}
+#LPPG .container .lesson .etap .title p {
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#LPPG .container .lesson .etap:first-child {
+  background-color: #38c4c1;
+}
+#LPPG .container .lesson .etap:nth-child(2) {
+  background-color: #feca02;
+}
+#LPPG .container .lesson .etap:nth-child(3) {
+  background-color: pink;
+}
+#LPPG .container .lesson .etap:nth-child(4) {
+  background-color: rgb(80, 80, 255);
+}
+
+#Kids {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+}
+#Kids .container .title-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#Kids .container .title-text h1 {
+  font-weight: bold;
+  color: #488df4;
+  font-size: 40px;
+}
+#Kids .container .title-text .line {
+  margin: 20px auto;
+  width: 60px;
+  height: 4px;
+  background-color: black;
+}
+#Kids .container .title-text p {
+  font-size: 20px;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+#School {
+  margin-top: 40px;
+}
+#School .container .title {
+  margin: 20px 0;
+  text-align: center;
+}
+#School .container .title h4 {
+  font-size: 25px;
+  font-weight: 100;
+  color: gray;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#School .container .title h1 {
+  font-size: 35px;
+}
+#School .container .images {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+#School .container .images .big {
+  width: 50%;
+}
+#School .container .images .big img {
+  width: 100%;
+}
+#School .container .images .small {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#School .container .images .small .info {
+  width: 47%;
+  margin: 0 auto 15px;
+  background-color: #ebfcfc;
+  padding: 20px 20px;
+}
+#School .container .images .small .info .ic {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+#School .container .images .small .info .ic .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #38c4c1;
+}
+#School .container .images .small .info .ic .icon i {
+  color: white;
+  font-size: 60px;
+}
+#School .container .images .small .info .text h4 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: gray;
+  text-align: right;
+}
+#School .container .images .small .info .text p {
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 100;
+  color: rgb(95, 95, 95);
+}
+#School .container .images .small .info .text .read {
+  text-align: right;
+}
+#School .container .images .small .info .text .read a {
+  display: block;
+  color: #38c4c1;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+}
+#School .container .images .small .info:nth-child(2) {
+  background-color: #fff2fa;
+}
+#School .container .images .small .info:nth-child(2) .icon {
+  background-color: #fe7ec9;
+}
+#School .container .images .small .info:nth-child(2) .text a {
+  color: #fe7ec9;
+}
+#School .container .images .small .infos {
+  width: 47%;
+  margin: 0 auto 15px;
+}
+#School .container .images .small .infos .image {
+  height: 380px;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d3bfc71acd69527589c31f1b/d.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+#School .container .images .small .infos .image img {
+  height: 300px;
+  width: 100%;
+}
+
+#Features {
+  margin-top: 40px;
+  padding: 50px 0;
+  background-color: #feca02;
+}
+#Features .container .title {
+  margin: 20px 0;
+  text-align: center;
+}
+#Features .container .title h4 {
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#Features .container .title h1 {
+  color: white;
+  font-size: 35px;
+}
+#Features .container .services {
+  display: flex;
+  width: 80%;
+  margin: 30px auto 0;
+}
+#Features .container .services .service {
+  background-color: white;
+  margin: 0 10px;
+  padding: 15px;
+  text-align: center;
+}
+#Features .container .services .service .icon {
+  margin: 20px 0;
+}
+#Features .container .services .service .icon i {
+  color: pink;
+  font-size: 40px;
+}
+#Features .container .services .service .text h4 {
+  color: #488df4;
+  margin: 20px 0;
+}
+#Features .container .services .service .text p {
+  width: 74%;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  line-height: 25px;
+  font-style: italic;
+  font-size: 14px;
+  color: rgb(98, 98, 98);
+}
+
+#Emroll {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+#Emroll .container {
+  width: 75%;
+  margin: 0 auto;
+}
+#Emroll .container .title {
+  margin: 20px 0;
+}
+#Emroll .container .title h1 {
+  color: rgb(75, 75, 75);
+  font-size: 45px;
+}
+#Emroll .container .flex {
+  display: flex;
+  justify-content: space-between;
+}
+#Emroll .container .flex div p {
+  width: 95%;
+  line-height: 25px;
+  color: rgb(106, 106, 106);
+}
+
+#Methods {
+  margin-top: 30px;
+  padding: 40px;
+  background-color: #38c4c1;
+}
+#Methods .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+#Methods .container .image-info {
+  width: 32%;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
+}
+#Methods .container .image-info .image {
+  width: 100%;
+}
+#Methods .container .image-info .image img {
+  width: 100%;
+}
+#Methods .container .image-info .info {
+  padding: 40px 20px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+#Methods .container .image-info .info h1 {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: rgb(67, 67, 67);
+}
+#Methods .container .image-info .info p {
+  color: rgb(95, 95, 95);
+  line-height: 25px;
+}
+
+#About {
+  margin-top: 50px;
+}
+#About .container .title {
+  margin: 20px 0;
+  text-align: center;
+}
+#About .container .title h4 {
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(86, 86, 86);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#About .container .title h1 {
+  color: rgb(76, 76, 76);
+  font-size: 35px;
+}
+#About .container .about-image {
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+}
+#About .container .about-image .image {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#About .container .about-image .image img {
+  width: 80%;
+  margin: 0 auto;
+}
+#About .container .about-image .about {
+  margin: 0 10px;
+  display: flex;
+  text-align: right;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: space-around;
+}
+#About .container .about-image .about .info {
+  margin: 0 auto;
+}
+#About .container .about-image .about .info h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: rgb(70, 70, 70);
+}
+#About .container .about-image .about .info p {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 25px;
+  color: rgb(83, 83, 83);
+}
+#About .container .about-image .ab {
+  text-align: start;
+}
+
+#Facility {
+  margin-top: 30px;
+  padding: 40px;
+  background-color: #38c4c1;
+}
+#Facility .title {
+  margin: 20px 0;
+  text-align: center;
+}
+#Facility .title h4 {
+  font-size: 25px;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#Facility .title h1 {
+  color: white;
+  font-size: 35px;
+}
+#Facility .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+#Facility .container .image-info {
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#Facility .container .image-info .info {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Facility .container .image-info .info h1 {
+  width: 75%;
+  font-size: 30px;
+  margin: 0 auto 15px;
+  color: rgb(67, 67, 67);
+}
+#Facility .container .image-info .info p {
+  width: 75%;
+  margin: 0 auto;
+  color: rgb(95, 95, 95);
+  line-height: 25px;
+}
+#Facility .container .image-info .info .read {
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(255, 158, 174);
+  margin-top: 15px;
+}
+#Facility .container .image-info .image {
+  width: 100%;
+}
+#Facility .container .image-info .image img {
+  width: 100%;
+}
+
+#Contact .container {
+  display: flex;
+  padding: 80px 0;
+  justify-content: space-around;
+}
+#Contact .container .icon-info {
+  text-align: center;
+}
+#Contact .container .icon-info .icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #fe7ec9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Contact .container .icon-info .icon i {
+  color: white;
+  font-size: 45px;
+}
+#Contact .container .icon-info .info p {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#Contact .container .icon-info:nth-child(2) .icon {
+  background-color: #feca02;
+}
+#Contact .container .icon-info:nth-child(3) .icon {
+  background-color: #38c4c1;
+}
+
+#Headline {
+  background-color: #fe7ec9;
+}
+#Headline .container {
+  display: flex;
+  padding: 80px 0;
+  justify-content: space-around;
+}
+#Headline .container .icon-info .icon h5 {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#Headline .container .icon-info .info p {
+  color: white;
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: lighter;
+}
+#Headline .icons {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#Headline .icons i {
+  display: inline-block;
+  margin: 0 5px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #333333;
+  margin: 0;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  color: white;
+}
+footer p a {
+  color: #feb8e1;
+}
+footer p a:hover {
+  color: gray;
+  text-decoration: none;
+}
