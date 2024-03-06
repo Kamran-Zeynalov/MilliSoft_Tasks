@@ -1,0 +1,430 @@
+#Base-Info {
+    .slider {
+        overflow: hidden;
+
+        &:hover {
+            .slick-arrow {
+                opacity: 1;
+            }
+        }
+
+        .slick-arrow {
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+            transition: .3s;
+
+            &:before {
+                z-index: 1;
+                font-size: 70px;
+                color: #408858;
+            }
+        }
+
+        .slick-track {
+            width: 100%;
+        }
+
+        .slick-next {
+            right: 40px;
+        }
+
+        .slick-prev {
+            left: 40px;
+        }
+
+        .inf {
+            .info {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 135vh;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+                background-image: url(http://ecoharvest.farm/d1.jpg);
+
+                .text {
+                    width: 70%;
+                    margin: 0 auto;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 26px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                        width: 50%;
+                        text-align: center;
+                    }
+
+                    .buttons {
+                        button {
+                            padding: 15px 30px;
+                            border: none;
+                            color: white;
+
+                            &:first-child {
+                                background-color: #ae4c51;
+                            }
+
+                            &:nth-child(2) {
+                                background-color: #408858;
+                                transition: .3s;
+
+                                &:hover {
+                                    background-color: #ae4c51;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .info {
+                    background-image: url(http://ecoharvest.farm/2-min.jpg);
+
+                    .text {
+                        text-align: end;
+
+                        p {
+                            position: relative;
+                            left: 460px;
+                            text-emphasis: end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Welcome {
+    background-image: url(http://ecoharvest.farm/img/bg/about.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            width: 50%;
+            font-weight: 350;
+            text-align: center;
+        }
+
+        p {
+            width: 90%;
+            margin-top: 20px;
+            color: #7b8e9d;
+            text-align: center;
+            line-height: 29px;
+            font-size: 12px;
+        }
+
+        .button {
+            button {
+                border: none;
+                background-color: #408858;
+                padding: 13px 35px;
+
+                a {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 13px;
+                    color: white;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+#Our-Products {
+    margin-top: 150px;
+
+    .title {
+        text-align: center;
+        text-transform: capitalize;
+
+        h1 {
+            font-weight: bold;
+            font-size: 50px;
+            color: rgb(52, 52, 52);
+        }
+    }
+
+    .filter {
+        width: 100%;
+        text-align: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 50px;
+
+            li {
+                cursor: pointer;
+                margin: 0 8px;
+                position: relative;
+                padding: 2px 20px;
+                font-weight: bold;
+                color: #7b8e9d;
+                border-right: 2px solid #7b8e9d;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            .active {
+                color: #408858;
+
+                &::after {
+                    background-image: url(http://ecoharvest.farm/img/shape/1.png);
+                    background-repeat: no-repeat;
+                    height: 6px;
+                    content: "";
+                    position: absolute;
+                    width: 76px;
+                    bottom: -9px;
+                }
+
+                &:first-child {
+                    &::after {
+                        left: 5px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &::after {
+                        left: 24px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    &::after {
+                        left: 25px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    &::after {
+                        left: 43px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product {
+        cursor: pointer;
+        width: 90%;
+        margin: 60px auto 30px;
+
+        .image {
+            border: 1px solid #b3c0c9;
+            position: relative;
+            transition: .4s;
+
+            img {
+                transition: .4s;
+                width: 100%;
+            }
+
+            .icon {
+                opacity: 0;
+                position: absolute;
+                top: 45%;
+                left: 42%;
+                color: #408858;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .4s;
+            }
+        }
+
+        &:hover {
+            .image {
+                background-color: #408858a5;
+
+                img {
+                    opacity: 0.5;
+                }
+            }
+
+            .icon {
+                opacity: 1;
+
+                &:hover {
+                    background-color: #ae4c51;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .name {
+            margin-top: 20px;
+
+            p {
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+                color: #112433;
+                transition: .4s;
+
+                &:hover {
+                    color: #fab522;
+                }
+            }
+        }
+    }
+}
+
+#Why {
+    background-image: url(http://ecoharvest.farm/img/bg/about.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 100px;
+
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .info {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            width: 100%;
+            font-weight: 350;
+            text-align: center;
+        }
+
+        p {
+            width: 75%;
+            margin-top: 20px;
+            color: #7b8e9d;
+            text-align: center;
+            line-height: 25px;
+            font-size: 12px;
+        }
+
+        .lists {
+            width: 70%;
+
+            .list {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .icon {
+                    width: 15%;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .text {
+                    width: 75%;
+
+                    p {
+                        width: 100%;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Sort{
+    background-image: url(http://ecoharvest.farm/img/bg/bg3.jpg);
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    padding: 80px 0 50px;
+    .title{
+        text-align: center;
+        margin-bottom: 40px;
+        h1{
+            font-size: 45px;
+            font-weight: 380;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 70px;
+        font-weight: 350;
+        font-family: sans-serif;
+    }
+    p{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 100;
+    }
+}
+
+#Relative{
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    .container{
+        width: 80%;
+        height: 100%;
+        background-image: url(http://ecoharvest.farm/img/bg/bg5.jpg);
+        background-position: center;
+        background-size: 100;
+        background-repeat: no-repeat;
+
+        .flx{
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            align-items: center;
+            .img{
+                margin: 0;
+                padding: 0;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
