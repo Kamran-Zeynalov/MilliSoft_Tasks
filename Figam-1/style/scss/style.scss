@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image{
+        img{
+            width: 40%;
+        }
+    }
+    ul{
+        align-items: center;
+        justify-items: 100%;
+        display: flex;
+        list-style: none;
+        border: 1px solid black;
+        justify-content: end;
+        li{
+            margin: 0 7px;
+        }
+    }
+}

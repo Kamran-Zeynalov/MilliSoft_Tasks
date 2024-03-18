@@ -234,7 +234,8 @@ header .header2 ul .menu svg {
 #Base-Info .slider .inf:nth-child(3) .info .text p {
   position: relative;
   left: 460px;
-  text-emphasis: end;
+  -webkit-text-emphasis: end;
+          text-emphasis: end;
 }
 
 #Welcome {
@@ -575,4 +576,4 @@ footer .container .copy p a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}/*# sourceMappingURL=style.css.map */

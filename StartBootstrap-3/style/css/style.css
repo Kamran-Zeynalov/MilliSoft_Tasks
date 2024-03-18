@@ -369,6 +369,10 @@ header .header .menu ul li a:hover {
   display: block;
   width: 90%;
 }
+#Contact form .inputs input::-moz-placeholder {
+  font-size: 15px;
+  color: lightgray;
+}
 #Contact form .inputs input::placeholder {
   font-size: 15px;
   color: lightgray;
@@ -382,6 +386,10 @@ header .header .menu ul li a:hover {
   margin-top: 12px;
   display: block;
   width: 90%;
+}
+#Contact form textarea::-moz-placeholder {
+  font-size: 15px;
+  color: lightgray;
 }
 #Contact form textarea::placeholder {
   font-size: 15px;
@@ -454,4 +462,4 @@ footer .pri p a {
   color: gray;
   text-decoration: none;
   margin: 0 5px;
-}
+}/*# sourceMappingURL=style.css.map */

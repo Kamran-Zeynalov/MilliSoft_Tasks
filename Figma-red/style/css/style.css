@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2e35;
+  margin: 0;
+  padding: 0;
+}
+header .lists ul {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 0;
+}
+header .lists ul li {
+  margin: 0 32px;
+}
+header .lists ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+header .login {
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #0086d6;
+  margin-top: 12px;
+  text-align: center;
+}
+header .login a {
+  color: white;
+  text-decoration: none;
+}
+
+#Owner {
+  background-color: #1f2e35;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+#Owner .image img {
+  width: 100%;
+}
+#Owner .text {
+  margin-top: 80px;
+  color: white;
+}
+#Owner .text h1 {
+  font-size: 50px;
+  width: 100%;
+}
+#Owner .text p {
+  margin: 30px 0;
+  font-size: 20px;
+}
+#Owner .text button {
+  border: none;
+  border-radius: 10px;
+  background-color: #0086d6;
+  color: white;
+  font-weight: 600;
+  padding: 20px 40px;
+}
+
+#Points {
+  padding: 60px 0;
+}
+#Points .digits {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+#Points .digits h1 {
+  color: blue;
+}
+#Points .digits h3 {
+  margin: 15px 0;
+}
+
+#Popular .title {
+  text-align: center;
+}
+#Popular .title h1 {
+  font-size: 35px;
+}
+#Popular .title p {
+  letter-spacing: 1px;
+}
+#Popular .image-info {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+#Popular .image-info .image {
+  padding: 16px;
+}
+#Popular .image-info .image img {
+  width: 100%;
+}
+#Popular .image-info .info {
+  padding: 0 16px;
+}
+#Popular .image-info .info .tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#Popular .image-info .info .tit h6 {
+  color: greenyellow;
+}
+#Popular .image-info .info p {
+  color: gray;
+  font-size: 15px;
+  line-height: 32px;
+}
+#Popular .image-info .info p a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0086D6;
+  background: #E1EBFB;
+  font-weight: 550;
+  background-color: lightblue;
+  padding: 0px 6px;
+  margin-right: 5px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
