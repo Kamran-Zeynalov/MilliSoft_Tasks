@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            margin: 10px;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Kalkulator</h2>
+    <input type="text" id="num1" placeholder="eded 1...">
+    <input type="text" id="num2" placeholder="eded 2...">
+    <br>
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+    <br>
+    <input type="text" id="result" placeholder="Cavab" readonly>
+    <br><br><br><br>
+
+
+
+
+    <h2>Reverse String</h2>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="reverseString()">Reverse</button>
+    <br>
+    <input type="text" id="reversedString" placeholder="Reversed string" readonly>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
