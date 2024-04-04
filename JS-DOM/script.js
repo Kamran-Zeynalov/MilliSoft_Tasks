@@ -46,3 +46,36 @@
 //     }
 //     document.getElementById("reversedString").value = reversed;
 // }
+
+
+
+
+
+const designForm = document.getElementById('design-form');
+const designDiv = document.getElementById('Design-Div');
+
+designForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const width = document.getElementById('width').value;
+    const height = document.getElementById('height').value;
+    const borderWidth = document.getElementById('brd-width').value;
+    const borderStyle = document.getElementById('border-style').value;
+    const borderColor = document.getElementById('border-color').value;
+    const backgroundColor = document.getElementById('background-color').value;
+
+    designDiv.style.width = width + 'px';
+    designDiv.style.height = height + 'px';
+    designDiv.style.borderWidth = borderWidth + 'px';
+    designDiv.style.borderStyle = borderStyle;
+    designDiv.style.borderColor = borderColor;
+    designDiv.style.backgroundColor = backgroundColor;
+});
+
+
+function increaseWidth() {
+    var inputVal = document.getElementById("plusW").value;
+    var divWidth = document.getElementById("Design-Div").offsetWidth;
+    var newWidth = parseInt(inputVal) + divWidth;
+    document.getElementById("Design-Div").style.width = newWidth + "px";
+  }
