@@ -14,3 +14,16 @@ $(document).ready(function(){
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var listItems = document.querySelectorAll(".filter ul li");
+
+    listItems.forEach(function(item) {
+        item.addEventListener("click", function() {
+            listItems.forEach(function(li) {
+                li.classList.remove("active");
+            });
+            this.classList.add("active");
+        });
+    });
+});
