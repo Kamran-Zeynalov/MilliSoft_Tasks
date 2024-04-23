@@ -251,3 +251,24 @@ h1 {
   padding: 20px;
   border-radius: 5px;
 }
+
+#Table-student {
+  border: 1px solid black;
+  padding: 40px;
+}
+#Table-student table {
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  margin: 40px auto 0;
+}
+#Table-student table tr th {
+  padding: 7px;
+}
+#Table-student table tr td {
+  padding: 5px;
+}
+#Table-student table i {
+  cursor: pointer;
+  color: red;
+}

@@ -21,7 +21,6 @@ var nameElement = document.querySelector(".form-1 .name");
 
 textElement.innerHTML = array[currentIndex].text;
 nameElement.innerHTML = array[currentIndex].name;
-
 button.addEventListener("click", function () {
   currentIndex = (currentIndex + 1) % array.length;
   textElement.innerHTML = array[currentIndex].text;
@@ -113,33 +112,6 @@ window.onclick = function (e) {
   }
 };
 
-var alls = [
-  {
-    image: "car1.webp",
-    name: "Image 1",
-  },
-  {
-    image: "car2.jpeg",
-    name: "Image 2",
-  },
-  {
-    image: "nature1.jpeg",
-    name: "Image 3",
-  },
-  {
-    image: "nature2.jpeg",
-    name: "Image 4",
-  },
-  {
-    image: "people1.jpeg",
-    name: "Image 5",
-  },
-  {
-    image: "people2.jpeg",
-    name: "Image 6",
-  },
-];
-
 var li = document.querySelectorAll(".port-li");
 li.forEach(function (item) {
   item.addEventListener("click", function () {
@@ -152,87 +124,103 @@ li.forEach(function (item) {
 });
 
 function filterSelection(category) {
-  var items = document.getElementsByClassName('image-name');
+  var items = document.getElementsByClassName("image-name");
 
-  if (category == 'all') {
-      for (var i = 0; i < items.length; i++) {
-          items[i].classList.remove('hidden');
-      }
+  if (category == "all") {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.remove("hidden");
+    }
   } else {
-      for (var i = 0; i < items.length; i++) {
-          if (items[i].classList.contains(category)) {
-              items[i].classList.remove('hidden');
-          } else {
-              items[i].classList.add('hidden');
-          }
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].classList.contains(category)) {
+        items[i].classList.remove("hidden");
+      } else {
+        items[i].classList.add("hidden");
       }
+    }
   }
 }
 
-
 var minus = document.querySelector("#minus");
 var plus = document.querySelector("#plus");
+var volume = document.querySelector("#Volume");
 var widthElement = document.querySelector("#width-p");
 widthElement.style.width = "50%";
 minus.addEventListener("click", Decrease);
 plus.addEventListener("click", Increase);
+volume.addEventListener("click", Volume);
 
+function Volume() {
+  var distance = event.clientX - this.getBoundingClientRect().left;
+  var resul = Math.floor((distance * 100) / 400);
+  widthElement.style.width = resul + "%";
+  document.querySelector("#olcu").innerHTML = widthElement.style.width;
+}
 function Decrease() {
-  var currentWidth = parseInt(widthElement.style.width) || 0; 
-  if(currentWidth <= 0)
-  {
+  var currentWidth = parseInt(widthElement.style.width) || 0;
+  if (currentWidth <= 5) {
     widthElement.style.width = "0%";
     alert("Minimum voice: " + widthElement.style.width);
-  }
-  else{
-    widthElement.style.width = (currentWidth - 10) + "%";
+    document.querySelector("#olcu").innerHTML = widthElement.style.width;
+  } else {
+    widthElement.style.width = currentWidth - 10 + "%";
+    document.querySelector("#olcu").innerHTML = widthElement.style.width;
   }
 }
 function Increase() {
-  var currentWidth = parseInt(widthElement.style.width) || 0; 
-  if(currentWidth >= 100)
-  {
+  var currentWidth = parseInt(widthElement.style.width) || 0;
+  if (currentWidth >= 95) {
     widthElement.style.width = "100%";
     alert("Maximum voice: " + widthElement.style.width);
-  }
-  else{
-    widthElement.style.width = (currentWidth + 10) + "%";
+    document.querySelector("#olcu").innerHTML = widthElement.style.width;
+  } else {
+    widthElement.style.width = currentWidth + 10 + "%";
+    document.querySelector("#olcu").innerHTML = widthElement.style.width;
   }
 }
 
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var currentIndex = 0;
   var totalImages = document.querySelectorAll(".images-sli img").length;
 
   function showImage(index) {
-      var images = document.querySelectorAll(".images-sli img");
-      var mainImage = document.querySelector(".image-sli img");
-      mainImage.src = images[index].src;
+    var images = document.querySelectorAll(".images-sli img");
+    var mainImage = document.querySelector(".image-sli img");
+    mainImage.src = images[index].src;
   }
+
   showImage(currentIndex);
-  document.querySelector(".bi.bi-arrow-left-circle-fill").addEventListener("click", function() {
+  document
+    .querySelector(".bi.bi-arrow-left-circle-fill")
+    .addEventListener("click", function () {
       currentIndex = (currentIndex - 1 + totalImages) % totalImages;
       showImage(currentIndex);
-  });
-  document.querySelector(".bi.bi-arrow-right-circle-fill").addEventListener("click", function() {
+    });
+  document
+    .querySelector(".bi.bi-arrow-right-circle-fill")
+    .addEventListener("click", function () {
       currentIndex = (currentIndex + 1) % totalImages;
       showImage(currentIndex);
+    });
+  document.querySelectorAll(".images-sli img").forEach(function (img) {
+    img.addEventListener("click", function () {
+      var main = document.querySelector(".image-sli img");
+      main.src = img.src;
+    });
   });
 });
-
 
 var currentPage = 1;
 var totalPages = 10;
 
 function initPagination() {
-  var pagination = document.getElementById('pagination');
-  pagination.innerHTML = '';
+  var pagination = document.getElementById("pagination");
+  pagination.innerHTML = "";
 
   for (var i = 1; i <= totalPages; i++) {
-    var button = document.createElement('button');
+    var button = document.createElement("button");
     button.innerText = i;
-    button.addEventListener('click', function() {
+    button.addEventListener("click", function () {
       currentPage = parseInt(this.innerText);
       showPage(currentPage);
     });
@@ -243,18 +231,18 @@ function initPagination() {
 }
 
 function showPage(page) {
-  var buttons = document.querySelectorAll('.pagination button');
-  buttons.forEach(function(button) {
-    button.classList.remove('active');
+  var buttons = document.querySelectorAll(".pagination button");
+  buttons.forEach(function (button) {
+    button.classList.remove("active");
     if (parseInt(button.innerText) === page) {
-      button.classList.add('active');
+      button.classList.add("active");
     }
   });
 
-  var content = document.getElementById('content');
-  content.innerText = 'Item ' + page;
+  var content = document.getElementById("content");
+  content.innerText = "Item " + page;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   initPagination();
 });

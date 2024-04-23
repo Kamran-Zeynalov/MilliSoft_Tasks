@@ -274,3 +274,28 @@ h1 {
         border-radius: 5px;
       }
 }
+
+
+#Table-student{
+    border: 1px solid black;
+    padding: 40px;
+
+    table{
+        border-collapse: collapse;
+        width: 90%;
+        text-align: center;
+        margin: 40px auto 0;
+        tr{
+            th{
+                padding: 7px;
+            }
+            td{
+                padding: 5px;
+            }
+        }
+        i{
+            cursor: pointer;
+            color: red;
+        }
+    }
+}
