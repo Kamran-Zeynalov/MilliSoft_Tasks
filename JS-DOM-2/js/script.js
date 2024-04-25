@@ -246,3 +246,62 @@ function showPage(page) {
 document.addEventListener("DOMContentLoaded", function () {
   initPagination();
 });
+
+var arry = [
+  {
+    id: 1,
+    name: "Kamran",
+    surname: "Zeynalov",
+    age: 20,
+  },
+];
+let Name;
+let Surname;
+let Age;
+let i = 1;
+let table = document.querySelector(".table_body");
+arry.forEach((user) => {
+  table.innerHTML += `
+    <tr>
+      <td>${i++}</td>
+      <td>${user.name}</td>
+      <td>${user.surname}</td>
+      <td>${user.age}</td>
+      <td><i class="bi bi-pencil-square" onclick="editPerson()"></i></td>
+      <td><i class="bi bi-trash3"onclick="deletePerson(this)"></i></td>
+    </tr>
+`;
+});
+
+newRow.addEventListener("click", function () {
+  modal2.style.display = "block";
+});
+function closeModal() {
+  newUserName.value = "";
+  newUserSurname.value = "";
+  newUserAge.value = "";
+  modal2.style.display = "none";
+}
+
+newPerson.addEventListener("click", function () {
+  let user_name = newUserName.value;
+  let user_surname = newUserSurname.value;
+  let user_age = newUserAge.value;
+
+  table.innerHTML += `
+        <tr>
+          <td>${i++}</td>
+          <td>${user_name}</td>
+          <td>${user_surname}</td>
+          <td>${user_age}</td>
+          <td><i class="bi bi-pencil-square" onclick="editPerson()"></i></td>
+          <td><i class="bi bi-trash3" onclick="deletePerson(this)"></i></td>
+        </tr>
+    `;
+
+  closeModal();
+});
+
+function deletePerson(){
+  alert("asad");
+}
