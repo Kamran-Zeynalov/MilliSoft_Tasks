@@ -259,23 +259,31 @@ let Name;
 let Surname;
 let Age;
 let i = 1;
+let lastId = 0;
 let table = document.querySelector(".table_body");
-arry.forEach((user) => {
-  table.innerHTML += `
-    <tr>
+function getData() {
+  table.innerHTML = "";
+  arry.forEach((user) => {
+    table.innerHTML += `
+    <tr user_id = "${user.id}">
       <td>${i++}</td>
       <td>${user.name}</td>
       <td>${user.surname}</td>
       <td>${user.age}</td>
-      <td><i class="bi bi-pencil-square" onclick="editPerson()"></i></td>
+      <td><i class="bi bi-pencil-square" onclick="editPerson(this)"></i></td>
       <td><i class="bi bi-trash3"onclick="deletePerson(this)"></i></td>
     </tr>
 `;
-});
+    lastId = user.id + 1;
+  });
+}
+
+getData();
 
 newRow.addEventListener("click", function () {
   modal2.style.display = "block";
 });
+
 function closeModal() {
   newUserName.value = "";
   newUserSurname.value = "";
@@ -287,21 +295,66 @@ newPerson.addEventListener("click", function () {
   let user_name = newUserName.value;
   let user_surname = newUserSurname.value;
   let user_age = newUserAge.value;
-
-  table.innerHTML += `
-        <tr>
-          <td>${i++}</td>
-          <td>${user_name}</td>
-          <td>${user_surname}</td>
-          <td>${user_age}</td>
-          <td><i class="bi bi-pencil-square" onclick="editPerson()"></i></td>
-          <td><i class="bi bi-trash3" onclick="deletePerson(this)"></i></td>
-        </tr>
-    `;
-
+  let newuser = {
+    id: lastId,
+    name: user_name,
+    surname: user_surname,
+    age: user_age,
+  };
+  arry.push(newuser);
+  getData();
   closeModal();
 });
 
-function deletePerson(){
-  alert("asad");
+function deletePerson(deleted) {
+  let user_id = deleted.parentElement.parentElement.getAttribute("id");
+  let f2 = arry.filter((user) => user == user_id)[0];
+  let index = arry.indexOf(f2);
+  arry.splice(index, 1);
+  deleted.parentElement.parentElement.remove();
+  getData();
+}
+
+function closeModal2() {
+  editUserName.value = "";
+  editUserSurname.value = "";
+  editUserAge.value = "";
+  modal3.style.display = "none";
+}
+
+function editPerson(edited) {
+  let row = edited.parentElement.parentElement;
+  let user_id = row.getAttribute("user_id");
+  let e_name = row.children[1].innerText;
+  let e_surname = row.children[2].innerText;
+  let e_age = row.children[3].innerText;
+
+  inputss.innerHTML = `
+  <div id="modal3" style="display: none;" user_id=${user_id}>
+  <h5>edit Person</h5>
+  <input type="text" name="" id="editUserName" placeholder="name" value="${e_name}"><br>
+  <input type="text" name="" id="editUserSurname" placeholder="surname" value="${e_surname}">
+  <br><input type="number" name="" id="editUserAge" placeholder="age" value="${e_age}">
+  <br><button classs="button1" id="Change">edit</button>
+  <button class="closee" id="closee" onclick="closeModal2()">close</button>
+  </div>
+  `;
+  modal3.style.display = "block";
+  Change.addEventListener("click", function () {
+    let c_name = editUserName.value;
+    let c_surname = editUserSurname.value;
+    let c_age = editUserAge.value;
+    let user_idm = modal3.getAttribute("user_id");
+    console.log(user_idm);
+    let rows = document.querySelectorAll(".table_body tr");
+    rows.forEach((row) => {
+      if (row.getAttribute("user_id") == user_idm) {
+        row.children[1].innerText = c_name;
+        row.children[2].innerText = c_surname;
+        row.children[3].innerText = c_age;
+      }
+    });
+
+    closeModal2();
+  });
 }
